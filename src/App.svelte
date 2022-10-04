@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TailwindCss from "./styles/TailwindCSS.svelte";
+    import TailwindCss from "./styles/TailwindCSS.svelte"
     import Landing from "./pages/Landing.svelte"
 </script>
 

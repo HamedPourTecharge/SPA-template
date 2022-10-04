@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vite",
-    "build": "cross-env NODE_ENV=production vite build",
+    "dev": "npm run lint && cross-env NODE_ENV=development vite",
+    "build": "npm run lint && cross-env NODE_ENV=production vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "lint": "eslint . --ext .ts,.js,.svelte --fix",
     "create-story": "node ./scripts/create_story.cjs"
   },
   "devDependencies": {
@@ -23,9 +24,13 @@
     "@storybook/svelte": "^6.1.21",
     "@storybook/testing-library": "^0.0.13",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "@tsconfig/svelte": "^3.0.0",
     "@types/uuid": "^8.3.4",
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.15.0",
+    "eslint-plugin-svelte3": "^4.0.0",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
     "handlebars": "^4.7.7",
@@ -45,8 +50,6 @@
     "vite": "^3.0.3"
   },
   "dependencies": {
-    "alasql": "^1.7.3",
-    "argparse": "^2.0.1",
     "gsap": "npm:@gsap/business@^3.10.4",
     "svelte": "^3.49.0"
   }

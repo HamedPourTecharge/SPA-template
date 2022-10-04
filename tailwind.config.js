@@ -18,16 +18,16 @@ export default {
                 'betting-tier': '#D7DA66',
                 'regions': '#1A5C96',
                 'days': '#E66BC6',
-                'white-border': '#E6E6E6',
+                'white-border': '#E6E6E6'
             },
             fontFamily: {
-                'sans': ['Montserrat', 'ui-sans-serif', 'system-ui', ],
-                'serif': ['ui-serif', 'Georgia', ],
-                'mono': ['ui-monospace', 'SFMono-Regular', ],
-            },
+                'sans': ['Montserrat', 'ui-sans-serif', 'system-ui' ],
+                'serif': ['ui-serif', 'Georgia' ],
+                'mono': ['ui-monospace', 'SFMono-Regular' ]
+            }
         },
         variants: {
-            extend: {},
+            extend: {}
         }
     }
 }

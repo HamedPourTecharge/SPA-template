@@ -6,7 +6,7 @@ export default {
     preprocess: sveltePreprocess({
             postcss: true,
             typescript: true,
-            sourceMap: true,
+            sourceMap: true
         }
     )
 }
